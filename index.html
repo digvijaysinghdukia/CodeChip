@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>CodeChip</title>
+	<link rel="stylesheet" type="text/css" href="./css/style.css">
+	<link href='https://www.codechip.org/favicon.ico' rel='icon' type='image/x-icon'/>
+	<script src="https://kit.fontawesome.com/4e9c9165f4.js" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="./js/script.js"></script>
+</head>
+<body  onload="webTheam()">
+	
+<!---------- website nevbar ----------->
+<nav>
+	<div class="nav-home">
+		<i onclick="mode( 'dark' )" id="night" class="fas fa-moon"></i>
+		<i onclick="mode('light')" id="sun" class="fas fa-sun"></i>
+	</div>
+	<div class="nav-logo">
+		<div class="logo-img"><img src="./media/codechip.png"></div>
+		<div class="logo-name"> <h1>CODECHIP</h1></div>
+		</div>
+	<div class="nav-manu">
+		<i onclick="myNavopen()" class="fas fa-bars"></i>
+
+	</div>
+</nav>
+
+<!------------ navbar manu button column -------->
+
+<div id="manu" class="manu1">
+	<div class="close-btn"><i onclick="myNavclose()"class="fas fa-times close-btn"></i></div>
+	<div class="manu-content">
+		<a onclick="myNavclose()" href="#home">Home</a><br>
+		<a onclick="myNavclose()" href="#tec">Service's</a><br>
+		<a onclick="myNavclose()" href="#service">Project's</a><br>
+		<a onclick="myNavclose()" href="#contact">Technology</a><br>
+		<a onclick="myNavclose()" href="#team">About US</a><br>
+		<a onclick="myNavclose()" href="#from">Contect US</a><br>
+	</div>
+	<div class="manu-social">
+		<i class="fab fa-whatsapp"></i>
+		<i class="fab fa-instagram"></i>
+		<i class="fab fa-linkedin-in"></i>
+		<i class="fab fa-github"></i>
+	</div>
+</div>
+<!-------x---- navbar manu butten column close----x---->
+<!------x----- website navbar close -----x------->
+
+
+<!------x----- header section -----x------>
+
+<div class="home" id="home" style="background-image: url(./media/office.png);">
+	<div class="home-content">
+		<div>
+			<h2>Welcome to CodeChip</h2><br>
+			<h3>We are team of talented designers making websites with New Technology</h3> <br>
+			<a href="">Make Your Website</a>
+		</div>
+		
+	</div>
+</div>
+<!------x----- header section close -----x------>
+
+<!---------- Technology's image in web --------->
+<div class="Technology-section" id="tec">
+	<h2><i class="fas fa-laptop-code"></i>Technology</h2>
+	<div class="Technology">
+		<div class="tec-item"><img src="./media/htmlcss.png"></div>
+		<div class="tec-item"><img src="./media/javascript.png"></div>
+		<div class="tec-item"><img src="./media/jquery.png"></div>
+		<div class="tec-item"><img src="./media/bootstrap.png"></div>
+		<div class="tec-item"><img src="./media/python.png"></div>
+		<div class="tec-item"><img src="./media/django.png"></div>
+		<div class="tec-item"><img src="./media/mysql.png"></div>
+		<div class="tec-item"><img src="./media/Nginx.png"></div>
+		<div class="tec-item"><img src="./media/apache.png"></div>
+		<div class="tec-item"><img src="./media/linux0.png"></div>
+	</div>
+</div>
+<!-----x---- Technology's image in web close ----x------>
+
+<!--------- all service-section image and content -------->
+<div class="Service-section" id="service">
+	<h2><i class="fas fa-network-wired"></i>Service's</h2>
+	<div class="service">
+		<div class="service-item">
+			<div class="service-img"><img src="./media/web-design.png"></div>
+			<div class="service-content">
+				<h3>Web Design</h3>
+				<p>We design creative websites with responsive UI/UX.</p><br>
+			</div>
+			<div class="service-link">
+				<a href="">Inquiry Call <i class="fas fa-angle-double-up"></i></a>
+			</div>
+		</div>
+		<div class="service-item">
+			<div class="service-img"><img src="./media/web-development.png"></div>
+			<div class="service-content">
+				<h3>Web Development</h3>
+				<p>Our developer team develop secure websites with best database architectures.</p><br>
+			</div>
+			<div class="service-link">
+				<a href="">Inquiry Call <i class="fas fa-angle-double-up"></i></a>
+			</div>
+		</div>
+		<div class="service-item">
+			<div class="service-img"><img src="./media/website-maintainance.png"></div>
+			<div class="service-content">
+				<h3>Maintenance</h3>
+				<p>We custmize and trouble websites backend and other technical issues.</p><br>
+			</div>
+			<div class="service-link">
+				<a href="">Inquiry Call <i class="fas fa-angle-double-up"></i></a>
+			</div>
+		</div>
+	</div>
+</div>
+<!----x---- service-section image and content finessed ----x----->
+
+
+
+<!-------Our Process-section --------->
+<div class="contact-section" id="contact">
+	<h2><i class="fas fa-chalkboard-teacher"></i>Our Process</h2>
+
+	<div class="process">
+		<div class="Process-items">
+			<div class="items">
+				<div class="img"><img src="./media/codechip.png"></div>
+			</div>
+			<div class="items discuss">
+				<div><h3><span>01</span><br>Discuss</h3></div>
+			</div>
+			<div class="items design">
+				<div><h3><span>02</span><br>Design</h3></div>
+			</div>
+			<div class="items develop">
+				<div><h3><span>03</span><br>Develop</h3></div>
+			</div>
+			<div class="items functionality">
+				<div><h3><span>04</span><br>Functionality Test</h3></div>
+			</div>
+			<div class="items launch">
+				<div><h3><span>05</span><br>Launch</h3></div>
+			</div>
+		</div>
+	</div>
+</div>
+<!---x----Our Process-section close -----x---->
+
+
+
+<div class="Project-section" id="project">
+	<h2><i class="fas fa-project-diagram"></i>Project's</h2>
+	<div class="project">
+		<div class="project-item" style="background-image: url(./media/cyber-academy-homepage.png);">
+			<div class="project-link">
+				<a href="">View</a>
+			</div>
+			<div class="project-name">
+				<h3>CyberAcademy</h3>
+			</div>
+		</div>
+		<div class="project-item" style="background-image: url(./media/ktm-ui-homepage.png);">
+			<div class="project-link">
+				<a href="">View</a>
+			</div>
+			<div class="project-name">
+				<h3>Ktm-UI</h3>
+			</div>
+		</div>
+		<div class="project-item" style="background-image: url(./media/cyber-academy-homepage.png);">
+			<div class="project-link">
+				<a href="">View</a>
+			</div>
+			<div class="project-name">
+				<h3>SpeedXprees</h3>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+
+
+
+<div class="contact-section" id="from">
+	<h2><i class="fas fa-paper-plane"></i>Contact-US</h2>
+
+	<div class="contact">
+		<div class="contact-item">
+			<div class="from">
+				<div class="from-top"><h3>We Can Help You ?</h3></div>
+				<div class="from-center">
+					<input type="text" name="name" placeholder="Name"><br>
+					<input type="mail" name="name" placeholder="Your Mail ID"><br>
+					<input type="text" name="name" placeholder="Number"><br>
+					<input type="text" name="name" placeholder="We Can Help You ?"><br>
+					<p>Send Me</p>
+				</div>
+				
+			</div>
+
+
+			
+			<div class="twitter links"><i class="fab fa-twitter" ></i></div>
+			<div class="instagram links"><i class="fab fa-instagram"></i></div>
+			<div class="linkedin links"><i class="fab fa-linkedin-in"></i></div>
+			<div class="gmail links"><i class="far fa-envelope"></i></div>
+			<div class="number links" ><a class="fas fa-phone-alt"></a></div>
+		</div>
+	</div>
+</div>
+
+<footer>
+	<p>&copy;2021-2022 CodeChip All Rights Reserved</p>
+</footer>
+</body>
+</html>

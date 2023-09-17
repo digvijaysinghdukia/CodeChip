@@ -1,0 +1,967 @@
+/*main css file*/
+/*root css for all items*/
+
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Philosopher:ital,wght@1,700&family=Ubuntu:ital,wght@1,500&display=swap');
+
+
+:root {
+  --black: #000;
+  --white: #fff; 
+  --backgroundblack: #313131b3;
+  --backgroundwhite: #cacacab3;
+}
+
+
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+head title{
+	font-family: 'Audiowide', cursive;
+	color: #f00;
+	font-size: large;
+
+}
+body{
+	overflow-x: hidden;
+	background: var(--white);
+}
+/*codechip navbar css*/
+nav{
+	width: 100vw;
+	height: 50px;
+	background:var(--white);
+	color: var(--black);
+	border-bottom: 1px solid var(--black);
+	display: inline-grid;
+	grid-template-columns: auto auto auto auto auto auto auto;
+	place-items: center;
+	box-shadow: 0px 1px 2px -1px var(--black);
+	transition-duration: 5s;
+	position: fixed;
+	z-index: 4;
+	font-size: large;
+	
+}
+nav i{
+	margin-left: 30px;
+}
+nav i:hover{
+	color: red;
+}
+.nav-manu i{
+	transition-duration: 1s;
+}
+.nav-manu i:hover{
+	transform: rotate(90deg);
+}
+nav .nav-logo{
+	grid-column-start: 2;
+	grid-column-end: 7;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: 'Audiowide', cursive;
+	color: #f00;
+}
+
+
+nav .nav-logo img{
+	width: 50px;
+	height: auto;
+}
+
+
+.fa-sun{
+	color: #fff;
+	transition-duration: 0.5s;
+}
+
+
+ .fa-moon{
+	color: #000;
+	transition-duration: 0.5s;
+}
+.fa-sun:hover{
+	color: #ff8606;
+}
+
+.fa-moon:hover{
+	color: #4806ff;
+}
+
+#sun{
+	display: none;
+}
+
+
+
+
+
+.manu1{
+	display: none;
+}
+.manu{
+	width:100vw;
+	height: 100vh;
+	background: var(--black) ;
+	position: fixed;
+	top: 0px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	overflow: hidden;
+	animation: mymove 1.5s;
+	animation-fill-mode: forwards;
+	font-family: 'Ubuntu', sans-serif;
+	z-index: 1000;
+}
+
+
+@keyframes mymove {
+  from {top:-200vw;
+  		opacity: 0;}
+
+  to {top: 0vw;
+  		opacity: 1;}
+}
+
+
+.close-btn{
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	font-size: xxx-large;	
+}
+.close-btn i{
+	color: red;
+	transition-duration: 1s;
+}
+.close-btn i:hover{
+	transform: rotate(90deg);
+	color: #00ff28;
+}
+.manu-content a{
+	text-decoration: none;
+	font-size: xx-large;
+	color: var(--white);
+	line-height:2em;
+	transition-duration: 0.5s;
+	
+}
+.manu-content a:hover{
+	color: red;
+	font-size: xxx-large;
+}
+.manu-social{
+	position: absolute;
+	bottom: 0px;
+	width: 100%;
+	height: 50px;
+	background: transparent;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+.manu-social i{
+	font-size: xx-large;
+	color: #f00;
+	margin: 0vw 5vw;
+	transition-duration: 0.5s;
+}
+.manu-social i:hover{
+	color: var(--white);
+	font-size: xxx-large;
+
+}
+
+
+
+
+
+/* home section */
+.home{
+	width: 100vw;
+	height: 100vh;
+	position: relative;
+	background-position: center;
+	background-attachment: fixed;
+	overflow-x: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition-duration:5s;
+}
+.home-content{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: var(--backgroundblack);;
+	text-align: center;
+	color: var(--white);
+	transition-duration:5s;
+}
+.home-content div{
+	margin: 10px;
+}
+.home-content div h2{
+	font-size: xxx-large;
+	font-family: 'Philosopher', sans-serif;
+}
+.home-content div h3{
+	margin: 30px 0px;
+}
+.home-content div a{
+	text-decoration: none;
+	font-size: large;
+	color: red;
+	padding: 10px 20px;
+	transition-duration: 0.5s;
+	font-weight: 800;
+	background-color: var(--white);
+	transition-duration:5s;
+}
+.home-content div a:hover{
+	background-color: red;
+	color: var(--white);
+	border-radius: 40px;
+}
+
+
+
+
+
+
+
+.Technology-section, .Service-section, .Project-section, .contact-section{
+	width: 100vw;
+  height: auto;
+	position: relative;
+	text-align: center;
+	font-size: xx-large;
+	margin-top: 50px;
+	overflow-x: hidden;
+}
+
+
+
+
+
+
+.Technology-section h2, .Service-section h2, .Project-section h2, .contact-section h2{
+	margin: 50px 0px;
+	font-size: xxx-large;
+	background: -webkit-linear-gradient(90deg, #f00, var(--black) 100%) ;
+  background-clip: border-box;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	transition-duration:5s;
+}
+.Technology-section h2 i,.Service-section h2 i, .Project-section h2 i, .contact-section h2 i{
+	margin: 0px 20px;
+}
+
+
+.Technology{
+	width: 100vw;
+	height: auto;
+	position: relative;
+	display: grid;
+	grid-template-columns: auto auto auto auto auto;
+	grid-template-rows: auto auto;
+	place-items: center;
+	background: transparent;
+
+}
+.tec-item{
+	width: 60%;
+	height: 60%;
+	display: inline-flex;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition-duration: 0.5s;
+	background: transparent;
+	transition-duration:0.5s;
+	scale: 1;
+}
+.tec-item:hover{
+	scale: 1.7;
+}
+
+
+.tec-item img{
+	width: 90%;
+	height: auto;
+}
+
+
+.Service-section{
+	position: relative;
+}
+
+
+.service{
+	position: relative;
+	width: 100vw;
+	height: auto;
+	display: grid;
+	grid-template-columns: auto auto;
+	grid-template-rows: auto auto;
+	place-items: center;
+	grid-gap: 20px;
+}
+
+.service-item{
+	width: 50%;
+	height: 650px;
+}
+.service-item .service-img{
+	width: 100%;
+	height: 30%;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.service-item .service-img img{
+	width: auto;
+	height: 100%;
+}
+
+.service-item .service-content{
+	width: 100%;
+	height: 30%;
+	text-align: center;
+	color: var(--black);
+}
+.service-item .service-content h3,p{
+	font-size: x-large;
+	margin: 20px 0px;
+}
+.service-item .service-link{
+	width: 100%;
+	height:10%;
+	background: transparent;
+	position: relative;
+	bottom: 0px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 1px solid red;
+	margin-top: 5%;
+
+}
+.service-item .service-link a{
+	font-size: x-large;
+	color: red;
+	font-weight: 500;
+	text-decoration: none;
+}
+
+
+
+.process{
+	position: relative;
+	width: 100vw;
+	height: 600px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.Process-items{
+	position: relative;
+	width: 450px;
+	height: 450px;
+	font-size: medium;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: transparent;
+	transform: rotate(0deg);
+	animation-name: round;
+  	animation-duration: 20s;
+  	animation-iteration-count: 1000;
+  	animation-play-state: running;
+  	animation-timing-function: linear;
+  	animation-direction:reverse;
+}
+
+
+.Process-items .items{
+	position: absolute;
+	width: 150px;
+	height: 150px;
+	background: transparent;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+
+
+.Process-items .items div{
+	width: 150px;
+	height: 150px;
+	background: var(--white);
+	border-radius: 50%;
+	color: red;
+	box-shadow: 0px 0px 10px 3px var(--black);
+	text-align: center;
+	transition-duration: 0.7s;
+	transform: rotate(0deg);
+	animation-name: round;
+  	animation-duration: 20s;
+  	animation-iteration-count: 1000;
+  	animation-play-state: running;
+  	animation-timing-function: linear;
+  	animation-direction: normal;
+  	display: flex;
+  	align-items: center;
+  	justify-content: center;
+  	font-family: 'Ubuntu', sans-serif;
+}
+.Process-items .items div:hover{
+	color: var(--white);
+	background: red;
+	box-shadow: 0px 0px 10px 3px var(--black);
+}
+.Process-items .items .img:hover{
+	background: var(--black);
+	box-shadow: 0px 0px 0px 0px var(--black);
+}
+.Process-items .img img{
+	width: 100%;
+	height: 100%;
+}
+.Process-items .discuss{
+	top: 0%;
+	left: 35%;
+}
+.Process-items .design{
+	top: 25%;
+	right: 0%;
+}
+
+.Process-items .develop{
+bottom: 5%;
+right: 15%;
+}
+
+.functionality{
+bottom: 5%;
+left: 15%;
+}
+
+.launch{
+	top: 25%;
+	left: 0%;
+}
+
+
+
+
+
+@keyframes round{
+	0%  {transform: rotate(0deg);}
+  	10% {transform: rotate(36deg);}
+  	20% {transform: rotate(72deg);}
+  	30% {transform: rotate(108deg);}
+  	40% {transform: rotate(144deg);}
+  	50% {transform: rotate(180deg);}
+  	60% {transform: rotate(216deg);}
+  	70% {transform: rotate(252deg);}
+  	80% {transform: rotate(288deg);}
+  	90% {transform: rotate(324deg);}
+  	100%{transform: rotate(360deg);}
+}
+
+.Process-items .items div span{
+	font-size: xx-large;
+}
+
+
+
+
+
+
+.project{
+	position: relative;
+	width: 100vw;
+	height: auto;
+	display: grid;
+	grid-template-columns: auto auto;
+	grid-template-rows: auto auto;
+	place-items: center;
+	grid-gap: 20px;
+	overflow: hidden;
+	transition-duration:5s;
+}
+.project-item{
+	width: 90%;
+	height: 350px;
+	background-size: cover;
+	background-position: top;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: x-large;
+	transition-duration:5s;
+}
+
+.project-item .project-link{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: var(--backgroundblack) ;
+	transition-duration:5s;
+}
+
+.project-item .project-link a{
+	text-decoration: none;
+	padding: 5px 40px;
+	color: red;
+	font-weight: 500;
+	background-color: var(--white);
+	transition-duration: 0.5s;
+	transition-duration:5s;
+}
+
+.project-item .project-link a:hover{
+	background-color: red;
+	color: var(--white);
+	border-radius: 40px;
+}
+.project-item .project-name{
+	position: relative;
+	width: 100%;
+	height:100%;
+	background: var(--backgroundwhite);;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition-duration:5s;
+}
+.project-item .project-name h3{
+	text-align: center;
+	color: var(--black);
+	transition-duration:5s;
+}
+
+
+
+
+
+
+
+.contact{
+	width: 100vw;
+	height: auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.contact-item{
+	width: 60%;
+	height: 100%;
+	background:linear-gradient(45deg, #f00, var(--black) 100%);
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: x-large;
+
+}
+
+.contact-item .from{
+	position: relative;
+	width: 80%;
+	height: 80%;
+	background: var(--white);
+	font-family: 'Philosopher', sans-serif;
+	transition-duration:5s;
+}
+.from .from-top{
+	position: relative;
+	width: 100%;
+	height: 30%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: var(--black);
+}
+.from .from-center{
+	position: relative;
+	width: 100%;
+	height: 65%;
+	display: grid;
+	place-items: center;
+}
+.from .from-center input{
+	width: 70%;
+	color: var(--black);
+	background: var(--white);
+	line-height:3em;
+	border: 1px solid var(--black);
+	border-radius: 5px;
+	padding-left: 10px;
+	transition-duration:5s;
+}
+.from .from-center p{
+	color: var(--black);
+	background: var(--white);
+	border: 2px solid var(--black);
+	border-radius: 5px;
+	padding: 10px 30px;
+	transition-duration: 5s;
+
+}
+.from .from-center p:hover{
+	border: 2px solid royalblue;
+	color: red;
+}
+
+
+
+
+
+
+
+.contact-item .twitter{
+	position: absolute;
+	top: 25%;
+	left: 0px;
+	width: 10%;
+	height: 10%;
+	background: var(--white);
+	transition-duration:5s;
+}
+
+.contact-item .instagram{
+	position: absolute;
+	top: 25%;
+	right: 0px;
+	width: 10%;
+	height: 10%;
+	background: var(--white);
+	transition-duration:5s;
+}
+
+.contact-item .linkedin{
+	position: absolute;
+	bottom: 25%;
+	left: 0px;
+	width: 10%;
+	height: 10%;
+	background: var(--white);
+	transition-duration:5s;
+}
+
+.contact-item .gmail{
+	position: absolute;
+	bottom: 25%;
+	right: 0px;
+	width: 10%;
+	height: 10%;
+	background: var(--white);
+	transition-duration:5s;
+}
+
+.contact-item .number{
+	position: absolute;
+	bottom: 0px;
+	width: 10%;
+	height: 10%;
+	background: var(--white);
+	transition-duration:5s;
+	color: var(--black);
+}
+
+.contact-item .links{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.contact-item .links i{
+	color: var(--black);
+	transition-duration: 0.5s;
+}
+.contact-item .links i:hover{
+	color: red;
+}
+footer{
+	width: 100%;
+	height: 50px;
+	background: var(--white);
+	border-top:1px solid var(--black);
+	position: relative;
+	margin-top: 100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: var(--black);
+	transition-duration:5s;
+}
+footer p{
+	font-size: medium;
+	transition-duration:5s;
+}
+
+
+
+
+
+
+
+@media only screen and (max-width: 600px) {
+
+	nav {
+    width: 100vw;
+    height: 50px;
+  }
+	nav .nav-logo img {
+    width: 50px;
+	}
+
+	.Technology{
+		grid-template-columns: auto auto;
+		grid-template-rows: auto auto auto auto auto;
+	}
+
+	.service, .project, .team{
+		width: 100%;
+		grid-template-columns: auto;
+		grid-template-rows: auto auto auto;
+	}
+	.project-item, .team-item{
+		height: 200px;
+		font-size: large;
+	}
+
+	.Technology-section h2, .Service-section h2, .Project-section h2, .team-section h2, .contact-section h2{
+		font-size: xx-large;
+	}
+	.service-item{
+	font-size: large;
+	}
+
+	.Process-items{
+	width: 400px;
+	height: 400px;
+	font-size: small;
+	}
+
+	.Process-items .items{
+	width: 100px;
+	height: 100px;
+	}
+
+	.Process-items .items div{
+	width: 100px;
+	height: 100px;
+	}
+
+	.contact-item {
+    width: 95%;
+    height: 700px;
+  }
+} 
+@media only screen and (min-width: 600px) {
+	.Technology{
+		grid-template-columns: auto auto;
+		grid-template-rows: auto auto auto auto auto;
+	}
+
+	.service, .project, .team{
+		width: 100%;
+		grid-template-columns: auto;
+		grid-template-rows: auto auto auto;
+	}
+	.project-item{
+		height: 200px;
+		font-size: large;
+		width: 60%;
+	}
+
+	.Technology-section h2, .Service-section h2, .Project-section h2, .team-section h2, .contact-section h2{
+		font-size: xx-large;
+	}
+	.service-item{
+	font-size: large;
+	}
+
+	.Process-items{
+	width: 500px;
+	height: 500px;
+	font-size: small;
+	}
+
+	.Process-items .items{
+	width: 100px;
+	height: 100px;
+	}
+
+	.Process-items .items div{
+	width: 100px;
+	height: 100px;
+	}
+
+	.contact-item {
+    width: 95%;
+    height: 700px;
+  }
+} 
+@media only screen and (min-width: 768px) {
+	.Technology{
+		grid-template-columns: auto auto auto auto auto;
+		grid-template-rows: auto auto ;
+	}
+
+	.service, .project, .team{
+		width: 100%;
+		grid-template-columns: auto auto;
+		grid-template-rows: auto auto;
+	}
+	.project-item{
+		height: 200px;
+		font-size: large;
+		width: 60%;
+	}
+
+	.Technology-section h2, .Service-section h2, .Project-section h2, .team-section h2, .contact-section h2{
+		font-size: xx-large;
+	}
+	.service-item{
+	font-size: large;
+	}
+
+	.Process-items{
+	width: 500px;
+	height: 500px;
+	font-size: small;
+	}
+
+	.Process-items .items{
+	width: 100px;
+	height: 100px;
+	}
+
+	.Process-items .items div{
+	width: 100px;
+	height: 100px;
+	}
+
+	.contact-item {
+    width: 80%;
+    height: 700px;
+  }
+  .service-item .service-link{
+  	margin-top: 70px;
+  }
+} 
+@media only screen and (min-width: 992px) {
+		nav {
+	    width: 100vw;
+	    height: 60px;
+	  }
+		nav .nav-logo img {
+	    width: 60px;
+		}
+
+
+
+		.Technology{
+		grid-template-columns: auto auto auto auto auto;
+		grid-template-rows: auto auto ;
+	}
+
+	.service, .project, .team{
+		width: 100%;
+		grid-template-columns: auto auto;
+		grid-template-rows: auto auto;
+	}
+	.project-item{
+		height: 200px;
+		font-size: large;
+		width: 70%;
+	}
+
+	.Technology-section h2, .Service-section h2, .Project-section h2, .team-section h2, .contact-section h2{
+		font-size: xx-large;
+	}
+	.service-item{
+	font-size: large;
+	}
+
+	.Process-items{
+	width: 500px;
+	height: 500px;
+	font-size: small;
+	}
+
+	.Process-items .items{
+	width: 100px;
+	height: 100px;
+	}
+
+	.Process-items .items div{
+	width: 100px;
+	height: 100px;
+	}
+
+	.contact-item {
+    width: 60%;
+    height: 700px;
+  }
+} 
+@media only screen and (min-width: 1200px) {
+	nav {
+    width: 100vw;
+    height: 70px;
+  }
+	nav .nav-logo img {
+    width: 70px;
+	}
+
+
+
+	.contact-item {
+    width: 50%;
+    height: 700px;
+  }
+} 
+
+@media only screen and (min-width: 1600px) {
+	nav {
+    width: 100vw;
+    height: 100px;
+  }
+	nav .nav-logo img {
+    width: 100px;
+	}
+
+
+
+	.Process-items{
+		width: 650px;
+		height: 650px;
+		font-size: small;
+		}
+
+	.project-item {
+  	height: 300px;		
+  }
+
+  .contact-item {
+    width: 40%;
+    height: 1000px;
+  }
+
+}
